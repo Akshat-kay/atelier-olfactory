@@ -1,12 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import SageAtelier from "@/components/SageAtelier";
+import BespokeExperience from "@/components/BespokeExperience";
+import SeasonalScents from "@/components/SeasonalScents";
+import LegacySection from "@/components/LegacySection";
+import ConsultationForm from "@/components/ConsultationForm";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen">
+      <Navigation />
+      <Hero />
+      <div id="atelier">
+        <SageAtelier />
       </div>
+      <div id="experience">
+        <BespokeExperience />
+      </div>
+      <div id="scents">
+        <SeasonalScents />
+      </div>
+      <div id="legacy">
+        <LegacySection />
+      </div>
+      <ConsultationForm />
+      <Footer />
     </div>
   );
 };

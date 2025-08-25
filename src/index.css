@@ -2,39 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Scented Sage - Luxury Atelier Design System */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Brand Colors - Mystical Sanctuary Palette */
+    --background: 220 15% 8%;
+    --foreground: 210 40% 98%;
+    
+    /* Mystical Atmosphere */
+    --mist: 220 20% 85%;
+    --midnight: 220 25% 12%;
+    --charcoal: 220 15% 20%;
+    --ethereal: 210 30% 96%;
+    --sage-green: 140 30% 25%;
+    --sage-light: 140 25% 40%;
+    
+    /* Metallic Accents */
+    --gold: 45 80% 75%;
+    --platinum: 210 15% 80%;
+    
+    /* Interactive States */
+    --hover: 220 20% 25%;
+    --active: 140 30% 30%;
+    
+    /* Seasonal Palettes */
+    --spring-light: 80 50% 90%;
+    --spring-accent: 120 40% 70%;
+    --summer-warm: 45 60% 85%;
+    --summer-accent: 35 70% 65%;
+    --autumn-mist: 25 40% 75%;
+    --autumn-accent: 15 60% 50%;
+    --winter-crystal: 220 30% 95%;
+    --winter-accent: 220 40% 80%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Luxury Component Colors */
+    --card: var(--charcoal);
+    --card-foreground: var(--ethereal);
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: var(--midnight);
+    --popover-foreground: var(--ethereal);
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: var(--sage-green);
+    --primary-foreground: var(--ethereal);
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: var(--charcoal);
+    --secondary-foreground: var(--ethereal);
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: var(--midnight);
+    --muted-foreground: var(--mist);
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: var(--gold);
+    --accent-foreground: var(--midnight);
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: var(--ethereal);
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: var(--charcoal);
+    --input: var(--charcoal);
+    --ring: var(--gold);
+
+    /* Luxury Gradients */
+    --gradient-mystical: linear-gradient(135deg, hsl(var(--midnight)), hsl(var(--charcoal)));
+    --gradient-ethereal: linear-gradient(180deg, hsl(var(--background)), hsl(var(--midnight)));
+    --gradient-sage: linear-gradient(135deg, hsl(var(--sage-green)), hsl(var(--sage-light)));
+    --gradient-metallic: linear-gradient(45deg, hsl(var(--gold)), hsl(var(--platinum)));
+
+    /* Luxury Shadows */
+    --shadow-mystical: 0 25px 50px -12px hsl(var(--midnight) / 0.8);
+    --shadow-ethereal: 0 10px 40px -10px hsl(var(--sage-green) / 0.3);
+    --shadow-glow: 0 0 60px hsl(var(--gold) / 0.2);
+
+    /* Transitions */
+    --transition-mystical: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-ethereal: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     --radius: 0.5rem;
 
@@ -100,6 +142,85 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-serif;
+    font-family: 'Cormorant Garamond', serif;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+  }
+
+  .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  /* Mystical Animations */
+  .animate-mystical-float {
+    animation: mystical-float 6s ease-in-out infinite;
+  }
+
+  .animate-ethereal-fade {
+    animation: ethereal-fade 1.2s ease-out forwards;
+  }
+
+  .animate-sage-glow {
+    animation: sage-glow 3s ease-in-out infinite alternate;
+  }
+
+  /* Interactive Elements */
+  .luxury-button {
+    @apply relative overflow-hidden px-8 py-4 text-sm font-light tracking-wider uppercase;
+    @apply bg-gradient-to-r from-primary/20 to-accent/20;
+    @apply border border-accent/30 text-accent;
+    @apply transition-all duration-700 ease-out;
+    @apply hover:from-accent/10 hover:to-primary/10 hover:border-accent/50;
+    @apply before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-accent/10 before:to-transparent;
+    @apply before:translate-x-[-100%] hover:before:translate-x-[100%] before:transition-transform before:duration-700;
+  }
+
+  .seasonal-card {
+    @apply relative p-8 backdrop-blur-sm border border-white/10;
+    @apply bg-gradient-to-br from-card/30 to-card/10;
+    @apply transition-all duration-700 ease-out;
+    @apply hover:from-card/40 hover:to-card/20 hover:border-white/20;
+    box-shadow: var(--shadow-ethereal);
+  }
+
+  .mystical-text {
+    @apply bg-gradient-to-r from-foreground via-accent to-foreground bg-clip-text text-transparent;
+    background-size: 200% auto;
+    animation: mystical-shimmer 4s ease-in-out infinite;
+  }
+
+  .logo-glow {
+    filter: drop-shadow(0 0 20px hsl(var(--gold) / 0.3));
+    transition: var(--transition-ethereal);
+  }
+
+  .logo-glow:hover {
+    filter: drop-shadow(0 0 30px hsl(var(--gold) / 0.5));
+  }
+}
+
+@keyframes mystical-float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(1deg); }
+}
+
+@keyframes ethereal-fade {
+  from { opacity: 0; transform: translateY(30px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes sage-glow {
+  from { box-shadow: 0 0 20px hsl(var(--sage-green) / 0.3); }
+  to { box-shadow: 0 0 40px hsl(var(--sage-green) / 0.6); }
+}
+
+@keyframes mystical-shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
