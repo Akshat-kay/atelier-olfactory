@@ -7,25 +7,25 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors - Glacial Luxury Palette */
-    --background: 210 25% 96%;
-    --foreground: 220 30% 15%;
+    /* Core Brand Colors - Mystical Sanctuary Palette */
+    --background: 220 15% 8%;
+    --foreground: 210 40% 98%;
     
-    /* Glacial Atmosphere */
-    --mist: 200 35% 92%;
-    --midnight: 210 40% 20%;
-    --charcoal: 220 25% 35%;
-    --ethereal: 200 50% 98%;
-    --sage-green: 200 30% 65%;
-    --sage-light: 200 25% 75%;
+    /* Mystical Atmosphere */
+    --mist: 220 20% 85%;
+    --midnight: 220 25% 12%;
+    --charcoal: 220 15% 20%;
+    --ethereal: 210 30% 96%;
+    --sage-green: 140 30% 25%;
+    --sage-light: 140 25% 40%;
     
-    /* Luxury Accents */
-    --gold: 200 60% 70%;
-    --platinum: 210 30% 85%;
+    /* Metallic Accents */
+    --gold: 45 80% 75%;
+    --platinum: 210 15% 80%;
     
     /* Interactive States */
-    --hover: 200 25% 80%;
-    --active: 200 35% 60%;
+    --hover: 220 20% 25%;
+    --active: 140 30% 30%;
     
     /* Seasonal Palettes */
     --spring-light: 80 50% 90%;
@@ -38,42 +38,42 @@
     --winter-accent: 220 40% 80%;
 
     /* Luxury Component Colors */
-    --card: var(--ethereal);
-    --card-foreground: var(--charcoal);
+    --card: var(--charcoal);
+    --card-foreground: var(--ethereal);
 
-    --popover: var(--ethereal);
-    --popover-foreground: var(--charcoal);
+    --popover: var(--midnight);
+    --popover-foreground: var(--ethereal);
 
     --primary: var(--sage-green);
-    --primary-foreground: var(--background);
+    --primary-foreground: var(--ethereal);
 
-    --secondary: var(--mist);
-    --secondary-foreground: var(--charcoal);
+    --secondary: var(--charcoal);
+    --secondary-foreground: var(--ethereal);
 
-    --muted: var(--mist);
-    --muted-foreground: var(--charcoal);
+    --muted: var(--midnight);
+    --muted-foreground: var(--mist);
 
     --accent: var(--gold);
-    --accent-foreground: var(--background);
+    --accent-foreground: var(--midnight);
 
     --destructive: 0 84% 60%;
     --destructive-foreground: var(--ethereal);
 
-    --border: var(--mist);
-    --input: var(--ethereal);
+    --border: var(--charcoal);
+    --input: var(--charcoal);
     --ring: var(--gold);
 
     /* Luxury Gradients */
-    --gradient-mystical: linear-gradient(135deg, hsl(var(--mist)), hsl(var(--ethereal)));
-    --gradient-ethereal: linear-gradient(180deg, hsl(var(--background)), hsl(var(--mist)));
+    --gradient-mystical: linear-gradient(135deg, hsl(var(--midnight)), hsl(var(--charcoal)));
+    --gradient-ethereal: linear-gradient(180deg, hsl(var(--background)), hsl(var(--midnight)));
     --gradient-sage: linear-gradient(135deg, hsl(var(--sage-green)), hsl(var(--sage-light)));
     --gradient-metallic: linear-gradient(45deg, hsl(var(--gold)), hsl(var(--platinum)));
     
-    /* Glacial Background Gradients */
-    --gradient-glacial-base: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--ethereal)) 25%, hsl(var(--mist)) 50%, hsl(var(--ethereal)) 75%, hsl(var(--background)) 100%);
-    --gradient-glacial-section: linear-gradient(180deg, hsl(var(--mist)/0.3) 0%, hsl(var(--ethereal)/0.5) 50%, hsl(var(--mist)/0.3) 100%);
-    --gradient-glacial-overlay: linear-gradient(180deg, hsl(var(--ethereal)/0.8) 0%, hsl(var(--background)/0.9) 50%, hsl(var(--ethereal)/0.8) 100%);
-    --gradient-glacial-accent: linear-gradient(135deg, hsl(var(--sage-green)/0.2) 0%, hsl(var(--gold)/0.1) 50%, hsl(var(--platinum)/0.2) 100%);
+    /* New Consistent Background Gradients */
+    --gradient-glacial-base: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--midnight)) 25%, hsl(var(--charcoal)) 50%, hsl(var(--midnight)) 75%, hsl(var(--background)) 100%);
+    --gradient-glacial-section: linear-gradient(180deg, hsl(var(--midnight)/0.8) 0%, hsl(var(--charcoal)/0.6) 50%, hsl(var(--midnight)/0.8) 100%);
+    --gradient-glacial-overlay: linear-gradient(180deg, hsl(var(--background)/0.3) 0%, hsl(var(--midnight)/0.2) 50%, hsl(var(--background)/0.3) 100%);
+    --gradient-glacial-accent: linear-gradient(135deg, hsl(var(--sage-green)/0.1) 0%, hsl(var(--gold)/0.05) 50%, hsl(var(--platinum)/0.1) 100%);
 
     /* Luxury Shadows */
     --shadow-mystical: 0 25px 50px -12px hsl(var(--midnight) / 0.8);

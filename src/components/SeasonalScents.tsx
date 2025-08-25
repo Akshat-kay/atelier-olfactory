@@ -53,21 +53,21 @@ const SeasonalScents = () => {
   const currentSeason = seasonalData[activeSeason];
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-center py-32 px-8 overflow-hidden">
-      {/* Consistent Glacial Background */}
+    <section className="relative min-h-screen flex flex-col justify-center py-32 px-8 transition-all duration-1000 overflow-hidden">
+      {/* Dynamic Background with enhanced glacial integration */}
       <div 
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 transition-all duration-1000"
         style={{
-          backgroundImage: `url(${mysticalBg})`,
+          backgroundImage: `url(${currentSeason.bgImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Consistent glacial overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-ethereal/70 to-background/90" />
-        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-mist/40 via-ethereal/20 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background via-mist/60 to-transparent" />
+        {/* Enhanced glacial overlay for consistent theme */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/90" />
+        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-midnight/60 via-midnight/30 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background via-midnight/80 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto">
