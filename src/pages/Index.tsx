@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import SageAtelier from "@/components/SageAtelier";
 import BespokeExperience from "@/components/BespokeExperience";
+import CraftSection from "@/components/CraftSection";
 import SeasonalScents from "@/components/SeasonalScents";
 import LegacySection from "@/components/LegacySection";
 import ConsultationForm from "@/components/ConsultationForm";
@@ -17,6 +18,9 @@ const Index = () => {
       </div>
       <div id="experience">
         <BespokeExperience />
+      </div>
+      <div id="craft">
+        <CraftSection />
       </div>
       <div id="scents">
         <SeasonalScents />
