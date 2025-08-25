@@ -1,7 +1,13 @@
 const Footer = () => {
   return (
-    <footer className="py-16 px-8 bg-midnight/50 border-t border-charcoal/30">
-      <div className="max-w-6xl mx-auto">
+    <footer className="py-16 px-8 bg-gradient-to-t from-midnight/80 to-background/90 border-t border-charcoal/30 relative overflow-hidden">
+      {/* Subtle glacial mist effects */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-sage-green/5 rounded-full blur-2xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/3 w-48 h-48 bg-mist/3 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }} />
+      </div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid md:grid-cols-3 gap-12 text-center md:text-left">
           {/* Brand */}
           <div className="space-y-4">

@@ -35,8 +35,14 @@ const experienceCategories = [
 
 const BespokeExperience = () => {
   return (
-    <section className="py-32 px-8 bg-gradient-ethereal">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-32 px-8 relative overflow-hidden">
+      {/* Subtle glacial mist effects */}
+      <div className="absolute inset-0 opacity-15">
+        <div className="absolute top-1/3 left-1/3 w-80 h-80 bg-gold/5 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/3 right-1/3 w-72 h-72 bg-sage-green/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }} />
+      </div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20 animate-ethereal-fade">
           <h2 className="text-5xl lg:text-6xl font-light mb-8 mystical-text">

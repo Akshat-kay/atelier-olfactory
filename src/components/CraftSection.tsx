@@ -23,8 +23,14 @@ const CraftSection = () => {
   ];
 
   return (
-    <section className="py-32 px-8 bg-gradient-to-b from-background to-midnight">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-32 px-8 relative overflow-hidden">
+      {/* Subtle glacial mist effects */}
+      <div className="absolute inset-0 opacity-15">
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-mist/5 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-platinum/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+      </div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20 animate-ethereal-fade">
           <h2 className="text-5xl lg:text-6xl font-light mb-8 mystical-text">
