@@ -64,13 +64,15 @@ const SeasonalScents = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background/60" />
+        {/* Enhanced glow overlay */}
+        <div className="absolute inset-0 bg-gradient-radial from-accent/10 via-transparent to-transparent opacity-70" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20 animate-ethereal-fade">
-          <h2 className="text-5xl lg:text-6xl font-light mb-8 mystical-text">
+          <h2 className="text-5xl lg:text-6xl font-light mb-8 section-title">
             Choose Your Journey
           </h2>
         </div>
@@ -95,7 +97,13 @@ const SeasonalScents = () => {
         {/* Active Season Display */}
         <div className="text-center space-y-16 animate-ethereal-fade" key={activeSeason}>
           <div className="space-y-8">
-            <h3 className="text-6xl md:text-8xl font-light text-foreground tracking-wide">
+            {/* Main crystallized text */}
+            <div className="mb-8">
+              <p className="text-lg md:text-xl crystallized-text tracking-[0.2em] uppercase">
+                Your Essence, Crystallized
+              </p>
+            </div>
+            <h3 className="text-6xl md:text-8xl font-light section-title tracking-wide">
               {currentSeason.philosophy}
             </h3>
           </div>

@@ -210,6 +210,18 @@
     text-shadow: 0 2px 8px hsl(var(--background) / 0.9);
   }
 
+  /* Prominent section text */
+  .section-title {
+    @apply text-foreground font-semibold;
+    text-shadow: 0 3px 6px hsl(var(--background) / 0.8);
+  }
+
+  .crystallized-text {
+    @apply text-foreground font-bold tracking-wider;
+    text-shadow: 0 4px 12px hsl(var(--background) / 0.9);
+    filter: drop-shadow(0 2px 4px hsl(var(--mist) / 0.3));
+  }
+
   .logo-glow {
     filter: drop-shadow(0 0 20px hsl(var(--gold) / 0.3));
     transition: var(--transition-ethereal);
