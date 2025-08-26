@@ -47,9 +47,9 @@ const Hero = () => {
         {/* Mystical Tagline */}
         <div className="mb-16 animate-ethereal-fade" style={{ animationDelay: '0.3s' }}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-6 tracking-wide">
-            <span className="mystical-text">Olfactory Alchemy</span>
+            <span className="hero-text">Olfactory Alchemy</span>
           </h1>
-          <p className="text-xl md:text-2xl font-light text-mist/80 tracking-wider">
+          <p className="text-xl md:text-2xl font-medium enhanced-text tracking-wider">
             Your Essence, Immortalized
           </p>
         </div>

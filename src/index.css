@@ -8,15 +8,15 @@
 @layer base {
   :root {
     /* Core Brand Colors - Glacial Luxury Palette */
-    --background: 220 30% 95%;
-    --foreground: 220 40% 15%;
+    --background: 220 30% 96%;
+    --foreground: 220 50% 12%;
     
     /* Glacial Atmosphere */
-    --mist: 220 15% 35%;
-    --midnight: 220 25% 25%;
-    --charcoal: 220 15% 40%;
+    --mist: 220 25% 25%;
+    --midnight: 220 35% 18%;
+    --charcoal: 220 25% 30%;
     --ethereal: 220 20% 98%;
-    --sage-green: 180 25% 45%;
+    --sage-green: 180 30% 35%;
     --sage-light: 180 20% 65%;
     
     /* Metallic Accents */
@@ -183,16 +183,31 @@
 
   .seasonal-card {
     @apply relative p-8 backdrop-blur-sm border border-mist/20;
-    @apply bg-gradient-to-br from-card/60 to-card/40;
+    @apply bg-gradient-to-br from-card/80 to-card/70;
     @apply transition-all duration-700 ease-out;
-    @apply hover:from-card/80 hover:to-card/60 hover:border-mist/30;
+    @apply hover:from-card/90 hover:to-card/80 hover:border-mist/40;
     box-shadow: var(--shadow-ethereal);
   }
 
   .mystical-text {
-    @apply bg-gradient-to-r from-foreground via-accent to-foreground bg-clip-text text-transparent;
-    background-size: 200% auto;
-    animation: mystical-shimmer 4s ease-in-out infinite;
+    @apply text-foreground font-semibold;
+    text-shadow: 0 2px 4px hsl(var(--background) / 0.8);
+  }
+
+  /* Enhanced text visibility */
+  .enhanced-text {
+    @apply text-foreground font-medium;
+    text-shadow: 0 1px 3px hsl(var(--background) / 0.7);
+  }
+
+  .luxury-text {
+    @apply text-mist font-medium;
+    text-shadow: 0 1px 2px hsl(var(--background) / 0.6);
+  }
+
+  .hero-text {
+    @apply text-foreground;
+    text-shadow: 0 2px 8px hsl(var(--background) / 0.9);
   }
 
   .logo-glow {
