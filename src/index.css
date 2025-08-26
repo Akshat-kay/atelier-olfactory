@@ -7,17 +7,17 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors - Mystical Sanctuary Palette */
-    --background: 220 15% 8%;
-    --foreground: 210 40% 98%;
+    /* Core Brand Colors - Glacial Luxury Palette */
+    --background: 220 30% 95%;
+    --foreground: 220 40% 15%;
     
-    /* Mystical Atmosphere */
-    --mist: 220 20% 85%;
-    --midnight: 220 25% 12%;
-    --charcoal: 220 15% 20%;
-    --ethereal: 210 30% 96%;
-    --sage-green: 140 30% 25%;
-    --sage-light: 140 25% 40%;
+    /* Glacial Atmosphere */
+    --mist: 220 15% 35%;
+    --midnight: 220 25% 25%;
+    --charcoal: 220 15% 40%;
+    --ethereal: 220 20% 98%;
+    --sage-green: 180 25% 45%;
+    --sage-light: 180 20% 65%;
     
     /* Metallic Accents */
     --gold: 45 80% 75%;
@@ -38,19 +38,19 @@
     --winter-accent: 220 40% 80%;
 
     /* Luxury Component Colors */
-    --card: var(--charcoal);
-    --card-foreground: var(--ethereal);
+    --card: 220 30% 98%;
+    --card-foreground: var(--foreground);
 
-    --popover: var(--midnight);
-    --popover-foreground: var(--ethereal);
+    --popover: var(--ethereal);
+    --popover-foreground: var(--foreground);
 
     --primary: var(--sage-green);
     --primary-foreground: var(--ethereal);
 
-    --secondary: var(--charcoal);
-    --secondary-foreground: var(--ethereal);
+    --secondary: 220 20% 90%;
+    --secondary-foreground: var(--foreground);
 
-    --muted: var(--midnight);
+    --muted: 220 20% 88%;
     --muted-foreground: var(--mist);
 
     --accent: var(--gold);
@@ -59,13 +59,13 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: var(--ethereal);
 
-    --border: var(--charcoal);
-    --input: var(--charcoal);
+    --border: 220 20% 80%;
+    --input: 220 15% 92%;
     --ring: var(--gold);
 
     /* Luxury Gradients */
-    --gradient-mystical: linear-gradient(135deg, hsl(var(--midnight)), hsl(var(--charcoal)));
-    --gradient-ethereal: linear-gradient(180deg, hsl(var(--background)), hsl(var(--midnight)));
+    --gradient-mystical: linear-gradient(135deg, hsl(220 30% 88%), hsl(220 25% 92%));
+    --gradient-ethereal: linear-gradient(180deg, hsl(var(--background)), hsl(220 25% 90%));
     --gradient-sage: linear-gradient(135deg, hsl(var(--sage-green)), hsl(var(--sage-light)));
     --gradient-metallic: linear-gradient(45deg, hsl(var(--gold)), hsl(var(--platinum)));
 
@@ -182,10 +182,10 @@
   }
 
   .seasonal-card {
-    @apply relative p-8 backdrop-blur-sm border border-white/10;
-    @apply bg-gradient-to-br from-card/30 to-card/10;
+    @apply relative p-8 backdrop-blur-sm border border-mist/20;
+    @apply bg-gradient-to-br from-card/60 to-card/40;
     @apply transition-all duration-700 ease-out;
-    @apply hover:from-card/40 hover:to-card/20 hover:border-white/20;
+    @apply hover:from-card/80 hover:to-card/60 hover:border-mist/30;
     box-shadow: var(--shadow-ethereal);
   }
 
