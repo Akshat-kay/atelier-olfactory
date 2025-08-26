@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import AboutUs from "@/components/AboutUs";
 import SageAtelier from "@/components/SageAtelier";
 import BespokeExperience from "@/components/BespokeExperience";
 import CraftSection from "@/components/CraftSection";
@@ -15,6 +16,9 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <Hero />
+      <div id="about">
+        <AboutUs />
+      </div>
       <div id="atelier">
         <SageAtelier />
       </div>
