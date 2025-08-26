@@ -14,9 +14,7 @@ const Hero = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Enhanced glacial overlay for better transition */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/10 to-background/90" />
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background via-midnight/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/20 to-background/80" />
       </div>
 
       {/* Floating particles */}
@@ -67,9 +65,9 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Enhanced scroll indicator with glacial theme */}
+      {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-        <div className="w-px h-16 bg-gradient-to-b from-accent via-sage-green to-transparent animate-pulse" />
+        <div className="w-px h-16 bg-gradient-to-b from-accent to-transparent animate-pulse" />
       </div>
     </section>
   );

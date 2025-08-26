@@ -29,8 +29,8 @@ const ConsultationForm = () => {
   };
 
   return (
-    <section id="consultation" className="py-32 px-8 relative overflow-hidden">
-      {/* Enhanced Mystical Background with glacial theme */}
+    <section id="consultation" className="py-32 px-8 bg-gradient-mystical relative overflow-hidden">
+      {/* Mystical Background */}
       <div className="absolute inset-0 opacity-30">
         {[...Array(20)].map((_, i) => (
           <div
@@ -44,12 +44,6 @@ const ConsultationForm = () => {
             }}
           />
         ))}
-      </div>
-      
-      {/* Additional glacial mist effects */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-sage-green/5 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-gold/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }} />
       </div>
 
       <div className="max-w-2xl mx-auto text-center relative z-10">

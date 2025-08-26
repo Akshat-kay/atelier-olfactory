@@ -3,12 +3,6 @@ import { Card } from "@/components/ui/card";
 const SageAtelier = () => {
   return (
     <section className="py-32 px-8 relative overflow-hidden">
-      {/* Subtle glacial mist effects */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-sage-green/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-mist/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
-      </div>
-      
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}

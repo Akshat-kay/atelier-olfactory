@@ -10,27 +10,25 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-glacial-base">
+    <div className="min-h-screen">
       <Navigation />
       <Hero />
-      <div id="atelier" className="bg-glacial-section">
+      <div id="atelier">
         <SageAtelier />
       </div>
-      <div id="experience" className="bg-glacial-overlay">
+      <div id="experience">
         <BespokeExperience />
       </div>
-      <div id="craft" className="bg-glacial-section">
+      <div id="craft">
         <CraftSection />
       </div>
-      <div id="scents" className="bg-glacial-overlay">
+      <div id="scents">
         <SeasonalScents />
       </div>
-      <div id="legacy" className="bg-glacial-section">
+      <div id="legacy">
         <LegacySection />
       </div>
-      <div className="bg-glacial-overlay">
-        <ConsultationForm />
-      </div>
+      <ConsultationForm />
       <Footer />
     </div>
   );

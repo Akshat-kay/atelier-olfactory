@@ -54,7 +54,7 @@ const SeasonalScents = () => {
 
   return (
     <section className="relative min-h-screen flex flex-col justify-center py-32 px-8 transition-all duration-1000 overflow-hidden">
-      {/* Dynamic Background with enhanced glacial integration */}
+      {/* Dynamic Background */}
       <div 
         className="absolute inset-0 z-0 transition-all duration-1000"
         style={{
@@ -64,10 +64,7 @@ const SeasonalScents = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Enhanced glacial overlay for consistent theme */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background/90" />
-        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-midnight/60 via-midnight/30 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background via-midnight/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background/80" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto">

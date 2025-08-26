@@ -68,12 +68,6 @@
     --gradient-ethereal: linear-gradient(180deg, hsl(var(--background)), hsl(var(--midnight)));
     --gradient-sage: linear-gradient(135deg, hsl(var(--sage-green)), hsl(var(--sage-light)));
     --gradient-metallic: linear-gradient(45deg, hsl(var(--gold)), hsl(var(--platinum)));
-    
-    /* New Consistent Background Gradients */
-    --gradient-glacial-base: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--midnight)) 25%, hsl(var(--charcoal)) 50%, hsl(var(--midnight)) 75%, hsl(var(--background)) 100%);
-    --gradient-glacial-section: linear-gradient(180deg, hsl(var(--midnight)/0.8) 0%, hsl(var(--charcoal)/0.6) 50%, hsl(var(--midnight)/0.8) 100%);
-    --gradient-glacial-overlay: linear-gradient(180deg, hsl(var(--background)/0.3) 0%, hsl(var(--midnight)/0.2) 50%, hsl(var(--background)/0.3) 100%);
-    --gradient-glacial-accent: linear-gradient(135deg, hsl(var(--sage-green)/0.1) 0%, hsl(var(--gold)/0.05) 50%, hsl(var(--platinum)/0.1) 100%);
 
     /* Luxury Shadows */
     --shadow-mystical: 0 25px 50px -12px hsl(var(--midnight) / 0.8);
@@ -176,27 +170,6 @@
     animation: sage-glow 3s ease-in-out infinite alternate;
   }
 
-  /* New Consistent Background Classes */
-  .bg-glacial-base {
-    background: var(--gradient-glacial-base);
-  }
-  
-  .bg-glacial-section {
-    background: var(--gradient-glacial-section);
-  }
-  
-  .bg-glacial-overlay {
-    background: var(--gradient-glacial-overlay);
-  }
-  
-  .bg-glacial-accent {
-    background: var(--gradient-glacial-accent);
-  }
-  
-  .bg-glacial-mist {
-    background: linear-gradient(180deg, hsl(var(--mist)/0.05) 0%, hsl(var(--ethereal)/0.03) 100%);
-  }
-
   /* Interactive Elements */
   .luxury-button {
     @apply relative overflow-hidden px-8 py-4 text-sm font-light tracking-wider uppercase;
@@ -250,34 +223,4 @@
 @keyframes mystical-shimmer {
   0%, 100% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
-}
-
-/* New glacial theme animations */
-@keyframes glacial-mist {
-  0%, 100% { opacity: 0.1; transform: scale(1) translateY(0px); }
-  50% { opacity: 0.3; transform: scale(1.1) translateY(-10px); }
-}
-
-@keyframes glacial-shimmer {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-
-@keyframes glacial-float {
-  0%, 100% { transform: translateY(0px) translateX(0px); }
-  33% { transform: translateY(-15px) translateX(5px); }
-  66% { transform: translateY(-8px) translateX(-3px); }
-}
-
-/* Glacial animation classes */
-.animate-glacial-mist {
-  animation: glacial-mist 8s ease-in-out infinite;
-}
-
-.animate-glacial-shimmer {
-  animation: glacial-shimmer 6s ease-in-out infinite;
-}
-
-.animate-glacial-float {
-  animation: glacial-float 10s ease-in-out infinite;
 }
