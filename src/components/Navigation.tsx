@@ -15,7 +15,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/bafd5ab7-a480-4420-9528-36f47fc03e8c.png"
+              src="/lovable-uploads/751cfda5-2098-4934-afef-8867559d89eb.png"
               alt="The Scented Sage"
               className="w-12 h-12 logo-glow"
             />
