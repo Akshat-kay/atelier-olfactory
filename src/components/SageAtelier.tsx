@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 
 const SageAtelier = () => {
   return (
-    <section className="py-32 px-8 relative overflow-hidden">
+    <section className="py-32 px-8 relative overflow-hidden mystical-section">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}

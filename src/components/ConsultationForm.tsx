@@ -29,7 +29,7 @@ const ConsultationForm = () => {
   };
 
   return (
-    <section id="consultation" className="py-32 px-8 bg-gradient-mystical relative overflow-hidden">
+    <section id="consultation" className="py-32 px-8 mystical-section relative overflow-hidden">
       {/* Mystical Background */}
       <div className="absolute inset-0 opacity-30">
         {[...Array(20)].map((_, i) => (

@@ -23,7 +23,7 @@ const CraftSection = () => {
   ];
 
   return (
-    <section className="py-32 px-8 bg-gradient-to-b from-background to-midnight">
+    <section className="py-32 px-8 mystical-section">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20 animate-ethereal-fade">

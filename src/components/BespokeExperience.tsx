@@ -35,7 +35,7 @@ const experienceCategories = [
 
 const BespokeExperience = () => {
   return (
-    <section className="py-32 px-8 bg-gradient-ethereal">
+    <section className="py-32 px-8 mystical-section">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-20 animate-ethereal-fade">

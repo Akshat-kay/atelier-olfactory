@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 const OlfactoryFatigue = () => {
   return (
-    <section className="py-32 px-8 relative overflow-hidden">
+    <section className="py-32 px-8 relative overflow-hidden mystical-section">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20 animate-ethereal-fade">
           <h2 className="text-5xl lg:text-6xl font-light mb-8 mystical-text">

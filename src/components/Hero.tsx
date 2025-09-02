@@ -14,7 +14,7 @@ const Hero = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/20 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/30" />
       </div>
 
       {/* Floating particles */}
@@ -37,11 +37,13 @@ const Hero = () => {
       <div className="relative z-20 text-center px-8 max-w-4xl mx-auto">
         {/* Logo Integration */}
         <div className="mb-12 animate-ethereal-fade">
-          <img 
-            src="/lovable-uploads/bafd5ab7-a480-4420-9528-36f47fc03e8c.png"
-            alt="The Scented Sage"
-            className="w-48 md:w-64 mx-auto logo-glow opacity-90"
-          />
+          <div className="logo-seamless mx-auto w-fit">
+            <img 
+              src="/lovable-uploads/bafd5ab7-a480-4420-9528-36f47fc03e8c.png"
+              alt="The Scented Sage"
+              className="w-48 md:w-64 logo-glow opacity-95"
+            />
+          </div>
         </div>
 
         {/* Mystical Tagline */}

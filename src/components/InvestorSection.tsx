@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 const InvestorSection = () => {
   return (
-    <section className="py-32 px-8 relative overflow-hidden bg-gradient-ethereal">
+    <section className="py-32 px-8 relative overflow-hidden mystical-section">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-20 animate-ethereal-fade">
           <h2 className="text-5xl lg:text-6xl font-light mb-8 mystical-text">

@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 
 const LegacySection = () => {
   return (
-    <section className="py-32 px-8 relative overflow-hidden">
+    <section className="py-32 px-8 relative overflow-hidden mystical-section">
       {/* Mystical Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-sage-green/5 rounded-full blur-3xl" />
