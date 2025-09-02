@@ -38,7 +38,7 @@ const Hero = () => {
         {/* Logo Integration */}
         <div className="mb-12 animate-ethereal-fade">
           <img 
-            src="/lovable-uploads/211fd29c-90e0-4175-8bed-d149e51269d1.png"
+            src="/lovable-uploads/bafd5ab7-a480-4420-9528-36f47fc03e8c.png"
             alt="The Scented Sage"
             className="w-48 md:w-64 mx-auto logo-glow opacity-90"
           />

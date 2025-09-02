@@ -7,7 +7,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center justify-center md:justify-start space-x-3 mb-6">
               <img 
-                src="/lovable-uploads/211fd29c-90e0-4175-8bed-d149e51269d1.png"
+                src="/lovable-uploads/bafd5ab7-a480-4420-9528-36f47fc03e8c.png"
                 alt="The Scented Sage"
                 className="w-12 h-12 logo-glow"
               />
@@ -25,8 +25,8 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-light text-platinum mb-6">Private Consultation</h3>
             <div className="space-y-2 text-sm text-mist/70 font-sans">
-              <p>consultation@scentedage.com</p>
-              <p>+1 (555) ESSENCE</p>
+              <p>info@scentedsage.com</p>
+              <p>+1-437-230-0427</p>
               <p className="text-xs text-gold/60 italic mt-4">
                 By appointment only
               </p>

@@ -149,7 +149,7 @@ const ConsultationForm = () => {
             For Immediate Inquiries
           </p>
           <p className="text-mist/70 font-sans">
-            consultation@scentedage.com | +1 (555) ESSENCE
+            info@scentedsage.com | +1-437-230-0427
           </p>
         </div>
       </div>
